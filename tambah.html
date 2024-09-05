@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <style>
+        *{
+            font-family: sans-serif;
+        }
+        .container {
+            width: 260px;
+           
+            margin: auto;
+        }
+        .isi .input{
+            padding-bottom: 15px;
+            display: flex;
+            flex-direction: column;  
+        }
+        .isi input{
+             border-radius: 8px;
+             height: 25px;
+             box-shadow: 2px 2px rgb(124, 126, 125);
+        }
+           
+        label {
+            display: block;
+            margin-bottom: 5px;
+            margin-left: 10px;
+        }
+        h1{
+            text-align: center;
+        }
+        .btn{
+            margin-left: 181px;
+            padding-left: 15px;
+            padding-right: 15px;
+        }
+        .simpan{
+            border-radius: 7px;
+        }
+        .simpan:hover{
+            background-color: rgb(230, 230, 230);
+            transition: .3s;
+            box-shadow: 2px 2px;
+        }
+        .simpan:active{
+            box-shadow: 3px 3px;
+            transform: translateY(3px);
+            background-color: aqua;
+        }
+    </style>
+</head>
+<body>
+
+    <div class="container">
+
+        <h1>Tambah Barang</h1>
+
+        <div class="isi">
+
+            <div class="input">
+                <label>Nama</label>
+                <input type="text">
+            </div>
+            <div class="input">
+                <label>Kode</label>
+                <input type="number">
+            </div>
+            <div class="input">
+                <label>Tanggal Masuk</label>
+                <input type="date">
+            </div>
+            <div class="input">
+                <label>Tanggal Expired</label>
+                <input type="date">
+            </div>
+            <div class="input">
+                <label>Harga Beli</label>
+                <input type="number">
+            </div>
+            <div class="input">
+                <label>Harga Jual</label>
+                <input type="number">
+            </div>
+            <div class="input">
+                <label>Jumlah Stok</label>
+                <input type="number">
+            </div>
+            <div class="btn">
+                <button class="simpan">Simpan</button>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
